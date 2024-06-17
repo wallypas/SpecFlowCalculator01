@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowCalculator01", "SpecFlowCalculator01\SpecFlowCalculator01.csproj", "{F62AEA22-ECA5-4252-8A28-F138884088F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowCalculator.Specs", "SpecFlowCalculator.Specs\SpecFlowCalculator.Specs.csproj", "{C53E869E-91D2-4BB0-90CC-AD90F6D312E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F62AEA22-ECA5-4252-8A28-F138884088F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62AEA22-ECA5-4252-8A28-F138884088F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62AEA22-ECA5-4252-8A28-F138884088F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62AEA22-ECA5-4252-8A28-F138884088F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53E869E-91D2-4BB0-90CC-AD90F6D312E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53E869E-91D2-4BB0-90CC-AD90F6D312E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53E869E-91D2-4BB0-90CC-AD90F6D312E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53E869E-91D2-4BB0-90CC-AD90F6D312E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

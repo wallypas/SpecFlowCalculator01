@@ -6,7 +6,7 @@ namespace SpecFlowCalculator.Specs.Steps;
 [Binding]
 public sealed class CalculatorStepDefinitions
 {
-    private Calculator _calculator = new Calculator();
+    private Calculator _calculator = new Calculator(new MathOperations());
     private int _result;
     
     private readonly ScenarioContext _scenarioContext;
@@ -38,6 +38,42 @@ public sealed class CalculatorStepDefinitions
     public void WhenTheTwoNumbersAreSubtracted()
     {
         _result = _calculator.Subtract();
+    }
+    
+    [When(@"the two numbers are multiplied")]
+    public void WhenTheTwoNumbersAreMultiplied()
+    {
+        _result = _calculator.Multiply();
+    }
+    
+    [When(@"the two numbers are divided")]
+    public void WhenTheTwoNumbersAreDivided()
+    {
+        _result = _calculator.Divide();
+    }
+    
+    [When("the two numbers are added the alternative way")]
+    public void WhenTheTwoNumbersAreAddedAlt()
+    {
+        _result = _calculator.AddAlt();
+    }
+
+    [When(@"the two numbers are subtracted the alternative way")]
+    public void WhenTheTwoNumbersAreSubtractedAlt()
+    {
+        _result = _calculator.SubtractAlt();
+    }
+    
+    [When(@"the two numbers are multiplied the alternative way")]
+    public void WhenTheTwoNumbersAreMultipliedAlt()
+    {
+        _result = _calculator.MultiplyAlt();
+    }
+    
+    [When(@"the two numbers are divided the alternative way")]
+    public void WhenTheTwoNumbersAreDividedAlt()
+    {
+        _result = _calculator.DivideAlt();
     }
     
     [Then("the result should be (.*)")]
